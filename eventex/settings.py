@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG',defaut=False, cast=bool)
+DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*']
 
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'eventex.wsgi.application'
 
 defaut_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 DATABASES = {
-    'default': config('DATABASE_URL',defaut=defaut_dburl,cast=dburl),
+    'default': config('DATABASE_URL',default=defaut_dburl,cast=dburl),
 }
 
 
