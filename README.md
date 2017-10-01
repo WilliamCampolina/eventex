@@ -19,7 +19,7 @@ Sistema de Eventos encomendado pela Morena.
   cd wttd
   python -m venv .wttd
   source .wttd/bin/activate
-  pip install -r requerements.txt
+  pip install -r requerements-dev.txt
   cp contrib/env-sample .env
   python manage.py test
 ```
